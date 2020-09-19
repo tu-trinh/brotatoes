@@ -1,0 +1,23 @@
+{
+  "name": "brotatoes",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "client-install": "npm install --prefix client",
+    "start": "node index.js",
+    "server": "nodemon index.js",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
+  },
+  "author": "",
+  "license": "ISC",
+  "proxy": "http://localhost:5000",
+  "dependencies": {
+    "concurrently": "^5.3.0",
+    "create-react-app": "^3.4.1",
+    "express": "^4.17.1",
+    "nodemon": "^2.0.4"
+  }
+}
