@@ -7,16 +7,16 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = {};
-    this.connectToServer = this.connectToServer.bind(this);
+    // this.connectToServer = this.connectToServer.bind(this);
   }
 
-  connectToServer() {
-    fetch("/");
-  }
+  // connectToServer() {
+  //   fetch("/");
+  // }
 
-  componentDidMount() {
-    this.connectToServer();
-  }
+  // componentDidMount() {
+  //   this.connectToServer();
+  // }
 
   render() {
     return (
