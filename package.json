@@ -2,7 +2,7 @@
   "name": "brotatoes",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
     "client-install": "npm install --prefix brotato",
     "start": "node brotato/src/index.js",
@@ -20,6 +20,7 @@
     "express": "^4.17.1",
     "nodemon": "^2.0.4",
     "react": "^16.13.1",
-    "react-router-dom": "^5.2.0"
+    "react-router-dom": "^5.2.0",
+    "serve": "^11.3.2"
   }
 }
