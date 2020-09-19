@@ -5,8 +5,8 @@
   "main": "server.js",
   "scripts": {
     "client-install": "npm install --prefix brotato",
-    "start": "node index.js",
-    "server": "nodemon index.js",
+    "start": "serve -s build",
+    "server": "nodemon server.js",
     "client": "npm start --prefix brotato",
     "dev": "concurrently \"npm run server\" \"npm run brotato\"",
     "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix brotato && npm run build --prefix brotato"
@@ -19,6 +19,7 @@
     "create-react-app": "^3.4.1",
     "express": "^4.17.1",
     "nodemon": "^2.0.4",
+    "react": "^16.13.1",
     "react-router-dom": "^5.2.0"
   }
 }

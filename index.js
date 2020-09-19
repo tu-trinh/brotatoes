@@ -19,3 +19,6 @@ app.get("/", (req, res) => {
 app.listen(port, (req, res) => {
 	console.log("Server listening on port: ${port}");
 });
+
+
+    // "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix brotato && npm run build --prefix brotato"
